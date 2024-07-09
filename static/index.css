@@ -1,0 +1,13 @@
+body {
+    background-color: #0039C7;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+#LOGO {
+    width: 117px;
+    height: 47px;
+}

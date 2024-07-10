@@ -1,6 +1,6 @@
 .prototype-box {
     max-height: 458px;
-    padding: 100px;
+    padding: 80px;
 
     border-radius: 44px;
     background-color: rgb(255, 255, 255);
@@ -8,5 +8,21 @@
 
 .prototype-box h6 {
     font-family: 'LiHei Pro Medium';
-    font-size: 24px;
+    font-size: 30px;
+
+    margin-bottom: 10px;
+    line-height: 45px;
+    color: #252933;
+}
+
+.prototype-box p{
+    font-family: 'Freesentation-9Black';
+    font-size: 20px;
+    font-weight: 700;
+
+    padding: 18px 20px;
+    border-radius: 16px;
+
+    color: #ffffff;
+    background-color: #313539;
 }

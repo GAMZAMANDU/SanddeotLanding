@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     const findGrid = document.getElementById("grid"); // "grid"로 수정
 
     if (findGrid) {
-        for (let i = 0; i < 416; i++) {
+        for (let i = 0; i < 312; i++) {
             findGrid.innerHTML += `<div class="gird-box"></div>`;
         }
     } else {

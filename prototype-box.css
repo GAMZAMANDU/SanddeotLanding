@@ -1,0 +1,12 @@
+.prototype-box {
+    max-height: 458px;
+    padding: 100px;
+
+    border-radius: 44px;
+    background-color: rgb(255, 255, 255);
+}
+
+.prototype-box h6 {
+    font-family: 'LiHei Pro Medium';
+    font-size: 24px;
+}

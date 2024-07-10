@@ -10,7 +10,7 @@
 
 @font-face {
     font-family: 'LiHei Pro Medium';
-    src: url('/assets/lihei-pro-medium.woff') format('woff');
+    src: url('../font-file/LiHei-Pro-Medium.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }

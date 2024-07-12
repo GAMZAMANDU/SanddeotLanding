@@ -3,9 +3,30 @@ body {
 }
 
 header {
+    position: fixed;
+    top: 0px;
+
+
+    width: 100%;
+    
+    background-color: #171c27d4;
+    
+    backdrop-filter: blur(10px);
+    
+    z-index: 999;
+}
+
+header > div{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    
+    max-width: 1200px;
+    width: 100%;
+    height: 80px;
+
+    margin: 0px auto;
+
 }
 
 header nav a{
@@ -15,6 +36,10 @@ header nav a{
     font-family: 'Pretendard-Regular';
     font-size: 18px;
     margin-left: 10px;
+}
+
+main {
+    margin-top: 80px;
 }
 
 body {
@@ -28,12 +53,6 @@ body {
     height: 43px;
 }
 
-header {
-    height: 70px;
-    max-width: 1200px;
-    margin: 0px auto;
-}
-
 section {
     margin: 0px auto;
     max-width: 1300px;
@@ -42,17 +61,21 @@ section {
 #main-section {
     display: flex;
     justify-content: center;
-
+    
     height: 600px;
-
+    
     transition: 0.3ms ease-in;
 }
 
 #title-svg {
     margin-top: 60px;
     width: 900px;
-
+    
     margin-bottom: 20px;
+}
+
+#title-svg:hover path {
+    fill: #ffffff !important;
 }
 
 
@@ -85,6 +108,16 @@ section {
     transition: all 0.1s ease-in;
 }
 
-.gird-box:hover {
-    background-color: var(--grid-color) !important;
+#grid div:hover {
+    background-color: var(--grid-color);
+}
+
+#section-2 {
+    margin-top: 120px;
+}
+
+#section-2 > img{
+    z-index: -1;
+    position: absolute;
+    left: 0px;
 }

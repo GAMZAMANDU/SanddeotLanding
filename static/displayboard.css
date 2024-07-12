@@ -8,16 +8,18 @@
 
     padding: 5px 0;
 
-    animation: scroll 12s infinite linear;
+    animation: scroll 18s infinite linear;
 }
 
 .display-board {
+    margin-top: 40px;
     display: flex;
     border-top: 2px solid #FF4D4D;
     border-bottom: 2px solid #FF4D4D;
 }
 
 .display-board span {
+    font-family: 'KIMM_Bold';
     margin-right: 50px;
 }
 

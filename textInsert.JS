@@ -13,4 +13,4 @@ setTimeout(() => {
             clearInterval(intervalId);
         }
     }, 50 - (index * 2.5)); 
-}, 2000); 
+}, 1000); 

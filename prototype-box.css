@@ -22,6 +22,8 @@
 }
 
 .prototype-box p{
+    height: 24.5px;
+
     font-family: 'koreanRDRR';
     font-size: 24px;
     font-weight: 700;
@@ -31,4 +33,17 @@
 
     color: #ffffff;
     background-color: #313539;
+}
+
+.fill-box-red {
+    color: #FF4D4D;
+}
+
+.fill-border-red {
+    color: var(--main-bg-color);
+    text-shadow:
+        -1px -1px 0 #FF4D4D,  
+        1px -1px 0 #FF4D4D,
+        -1px  1px 0 #FF4D4D,
+       1px  1px 0 #FF4D4D; /* 텍스트 테두리 색상과 위치 */
 }

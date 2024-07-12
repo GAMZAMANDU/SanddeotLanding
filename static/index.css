@@ -1,46 +1,17 @@
-* {
-    margin: 0px;
-    padding: 0px;
-}
-
-:root {
-    --main-bg-color: #171C27;
-    --grid-color: #3A4055;
-}
-
-@font-face {
-    font-family: 'KoreanRDRR';
-    src: url('../font-file/KoreanRDRR.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'LiHei Pro Medium';
-    src: url('../font-file/LiHei-Pro-Medium.woff') format('woff');
-    font-weight: 400;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Freesentation-9Black';
-    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2404@1.0/Freesentation-7Black.woff2') format('woff2');
-    font-weight: 400;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Freesentation-9Black';
-    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2404@1.0/Freesentation-4Black.woff2') format('woff2');
-    font-weight: 700;
-    font-style: normal;
-}
-
 header {
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
+header nav a{
+    text-decoration: none;
+    color: white;
+
+    font-family: 'Pretendard-Regular';
+    font-size: 18px;
+    margin-left: 10px;
+}
 
 body {
     width: 100%;

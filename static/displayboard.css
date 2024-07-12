@@ -1,19 +1,30 @@
-.display-board h4{
+.display-board h4 {
+
     font-size: 60px;
-    
-    overflow: hidden;
-    white-space: nowrap;
+    line-height: 60px;
+
+    display: inline-block;
+
+    white-space: nowrap; 
+
+    padding: 5px 0;
+
+    animation: scroll 12s infinite linear;
 }
 
+.display-board {
+    display: flex;
+    border-top: 2px solid #FF4D4D;
+    border-bottom: 2px solid #FF4D4D;
+}
 
-.display-board h4{
-    padding: 0 10px;
-    animation: scroll 10s infinite linear;
+.display-board span {
+    margin-right: 50px;
 }
 
 @keyframes scroll {
     0% {
-        transform: translateX(100%);
+        transform: translateX(0);
     }
     100% {
         transform: translateX(-100%);

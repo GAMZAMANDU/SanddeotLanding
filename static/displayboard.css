@@ -1,0 +1,21 @@
+.display-board h4{
+    font-size: 60px;
+    
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+
+.display-board h4{
+    padding: 0 10px;
+    animation: scroll 10s infinite linear;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}

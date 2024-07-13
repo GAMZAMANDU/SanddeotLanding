@@ -17,14 +17,14 @@
     font-size: 30px;
 
     margin-bottom: 10px;
-    line-height: 45px;
+    line-height: 35px;
     color: #252933;
 }
 
 .prototype-box p{
     height: 24.5px;
 
-    font-family: 'TTHakgyoansimRikodeoR';
+    font-family: 'TTTtangsbudaejjigaeB';
     font-size: 24px;
     font-weight: 700;
 
@@ -46,7 +46,7 @@
     content: '';
     position: absolute;
     left: 0;
-    bottom: 0.1em;
+    bottom: 0em;
     width: 100%;
     height: 1em;
     background-color: #717BFE;
@@ -65,7 +65,7 @@
     content: '';
     position: absolute;
     left: 0;
-    bottom: 0.1em;
+    bottom: 0em;
     width: 100%;
     height: 1em;
     background-color: #FEC371;
@@ -84,7 +84,7 @@
     content: '';
     position: absolute;
     left: 0;
-    bottom: 0.1em;
+    bottom: 0em;
     width: 100%;
     height: 1em;
     background-color: #a6e64c;

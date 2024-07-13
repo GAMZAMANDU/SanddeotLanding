@@ -1,0 +1,60 @@
+#topic-box {
+    background-color: #fff;
+    padding: 70px 50px;
+    width: 400px;
+
+    border-radius: 50px;
+} 
+
+#topic-box > img {
+    width: 400px;
+
+    position: relative;
+    top: 30px;
+}
+
+.topic {
+    position: relative;
+    left: 70px;
+    bottom: 25px;
+
+    padding: 20px;
+    width: 200px;
+    
+    text-align: center;
+
+    color: #fff;
+    background-color: #FF4D4D;
+    
+    font-size: 30px;
+    font-family: 'Pretendard-Regular';
+    font-weight: 700;
+    
+    border-radius: 150px;
+
+    box-shadow: 0px 6px #821818;
+    overflow: hidden; /* 텍스트 오버플로우 숨김 */
+    height: 40px; /* 고정된 높이 설정 */
+}
+
+.topic-text {
+    margin-bottom: 36px;
+    line-height: 40px;
+    animation: slide 3s infinite ease-in-out;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateY(0);
+    }
+    33% {
+        transform: translateY(-76px);
+    }
+    66% {
+        transform: translateY(-152px);
+
+    }
+    100% {
+        transform: translateY(-228px);
+    }
+}

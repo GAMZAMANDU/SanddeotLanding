@@ -21,26 +21,33 @@ document.addEventListener('DOMContentLoaded', (event) => {
 });
 
 
-const box = document.querySelector('#main-section > div');
 
-box.addEventListener('mousemove', function(e) {
-    const rect = box.getBoundingClientRect();
-    const centerX = rect.left + rect.width / 2;
-    const centerY = rect.top + rect.height / 2;
+document.addEventListener('DOMContentLoaded', (event) => {
+    // 마우스 이동 효과를 적용하는 함수
+    function applyMouseEffect(box) {
+        box.addEventListener('mousemove', function(e) {
+            const rect = box.getBoundingClientRect();
+            const centerX = rect.left + rect.width / 2;
+            const centerY = rect.top + rect.height / 2;
 
-    const mouseX = e.clientX;
-    const mouseY = e.clientY;
+            const mouseX = e.clientX;
+            const mouseY = e.clientY;
 
-    const deltaX = mouseX - centerX;
-    const deltaY = mouseY - centerY;
-    const angleX = deltaY / centerY * 20; 
-    const angleY = -deltaX / centerX * 20; 
+            const deltaX = mouseX - centerX;
+            const deltaY = mouseY - centerY;
+            const angleX = deltaY / centerY * 20; 
+            const angleY = -deltaX / centerX * 20; 
 
-    // 변환 효과 적용
-    box.style.transform = `rotateX(${angleX}deg) rotateY(${angleY}deg) rotateZ(0deg)`;
+            // 변환 효과 적용
+            box.style.transform = `rotateX(${angleX}deg) rotateY(${angleY}deg) rotateZ(0deg)`;
+        });
+
+        box.addEventListener('mouseleave', function() {
+            box.style.transform = 'rotateX(0deg) rotateY(0deg) rotateZ(0deg)';
+        });
+    }
+
+    // 모든 box 클래스 요소에 함수 적용
+    const boxes = document.querySelectorAll('.touch-move');
+    boxes.forEach(box => applyMouseEffect(box));
 });
-
-box.addEventListener('mouseleave', function() {
-    box.style.transform = 'rotateX(0deg) rotateY(0deg) rotateZ(0deg)';
-});
-

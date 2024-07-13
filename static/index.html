@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="https://cdn.jsdelivr.net/npm/animejs/lib/anime.min.js" integrity="sha256-tc4b48P1MPGS4PJXHRlChGCW1mEZy62jS/3JEsSHPzU=" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="../prototype-box.css">
-    <link rel="stylesheet" href="../default.css">
+    <link rel="stylesheet" href="prototype-box.css">
+    <link rel="stylesheet" href="default.css">
     <link rel="stylesheet" href="displayboard.css">
+    <link rel="stylesheet" href="topic.css">
     
     <link rel="icon" href="/assets/icon.ico">
     <title>산뜻 - 영어독해능력 향상을 위한 탁월한 선택</title>
-    <script src="https://cdn.jsdelivr.net/npm/animejs/lib/anime.min.js" integrity="sha256-tc4b48P1MPGS4PJXHRlChGCW1mEZy62jS/3JEsSHPzU=" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
@@ -24,7 +25,7 @@
     </header>
     <main>
     <section id="main-section">
-        <div>
+        <div class="touch-move">
             <img id="title-svg" src="/assets/title.svg"></img>
             <div class="prototype-box">
                 <h6><span class="noun-phrase">investment in knowledge</span> <span class="verb-phrase">pays</span> <span class="object-phrase">the best interest.</span> <br> - Benjamin Franklin</h6>
@@ -43,6 +44,15 @@
 
     <section id="section-2">
         <img src="../assets/지폐.png" alt="">
+        <div id="topic-box">
+            <img src="../assets/NewsObj.png" class="touch-move" alt="news image">
+            <div class="topic">
+                <p class="topic-text">스포츠</p>
+                <p class="topic-text">뉴스</p>
+                <p class="topic-text">경제</p>
+                <p class="topic-text">스포츠</p>
+            </div>
+        </div>
     </section>
     </main>
 </body>

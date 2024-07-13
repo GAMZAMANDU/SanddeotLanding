@@ -12,7 +12,7 @@
 }
 
 .display-board {
-    margin-top: 40px;
+    margin-top: 80px;
     display: flex;
     border-top: 2px solid #FF4D4D;
     border-bottom: 2px solid #FF4D4D;
@@ -30,4 +30,18 @@
     100% {
         transform: translateX(-100%);
     }
+}
+
+
+.fill-box-red {
+    color: #FF4D4D;
+}
+
+.fill-border-red {
+    color: var(--main-bg-color);
+    text-shadow:
+        -1px -1px 0 #FF4D4D,  
+        1px -1px 0 #FF4D4D,
+        -1px  1px 0 #FF4D4D,
+       1px  1px 0 #FF4D4D; /* 텍스트 테두리 색상과 위치 */
 }

@@ -8,31 +8,17 @@ document.addEventListener('DOMContentLoaded', (event) => {
     } else {
         console.error('타겟 엘리먼트가 존재하지 않습니다.');
     }
-    anime({
-        targets: '#grid .grid-box',
-        scale: [
-            {value: .1, easing: 'easeOutSine', duration: 500},
-            {value: 1, easing: 'easeInOutQuad', duration: 1200}
-        ],
-        delay: anime.stagger(200, {grid: [24, 12], from: 'center'}),
-        autoplay: true
-    });
 });
 
-document.addEventListener('DOMContentLoaded', (event) => {
-    const gridBoxes = document.querySelectorAll('.grid-box');
-
-    gridBoxes.forEach((box) => {
-        box.addEventListener('mouseenter', () => {
-            box.style.backgroundColor = 'var(--grid-color)';
-        });
-
-        box.addEventListener('mouseleave', () => {
-            box.style.backgroundColor = 'var(--main-bg-color)';
-        });
-    });
+anime({
+    targets: '#grid .grid-box',
+    scale: [
+        {value: .1, easing: 'easeOutSine', duration: 500},
+        {value: 1, easing: 'easeInOutQuad', duration: 1200}
+    ],
+    delay: anime.stagger(200, {grid: [24, 12], from: 'center'}),
+    autoplay: true
 });
-
 
 const box = document.querySelector('#main-section > div');
 

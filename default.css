@@ -8,12 +8,6 @@
     --grid-color: #3A4055;
 }
 
-@font-face {
-    font-family: 'KoreanRDRR';
-    src: url('../font-file/KoreanRDRR.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
 
 @font-face {
     font-family: 'LiHei Pro Medium';
@@ -28,24 +22,21 @@
     font-weight: 700;
     font-style: normal;
 }
+/* "본 저작물은 '한국기계연구원'에서 '2022년'작성하여 공공누리 제1유형으로 개방한 '한국기계연구원 서체'를 이용하였으며,
+해당 저작물은 '한국기계연구원, www.kimm.re.kr/webfont'에서 무료로 다운받으실 수 있습니다." */
 
-@font-face {
-    font-family: 'Freesentation-9Black';
-    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2404@1.0/Freesentation-7Black.woff2') format('woff2');
-    font-weight: 400;
-    font-style: normal;
-}
 
-@font-face {
-    font-family: 'Freesentation-9Black';
-    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2404@1.0/Freesentation-4Black.woff2') format('woff2');
-    font-weight: 700;
-    font-style: normal;
-}
 
 @font-face {
     font-family: 'Pretendard-Regular';
     src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
     font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TTHakgyoansimRikodeoR';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2402_keris@1.0/TTHakgyoansimRikodeoR.woff2') format('woff2');
+    font-weight: normal;
     font-style: normal;
 }

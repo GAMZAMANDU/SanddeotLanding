@@ -120,3 +120,14 @@ section {
     position: absolute;
     left: 0px;
 }
+
+#section-2 > div {
+    position: relative;
+    top: 200px;
+
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+
+    margin: 0px auto;
+}

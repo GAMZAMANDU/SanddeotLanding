@@ -38,7 +38,7 @@ header nav a{
 }
 
 main {
-    margin-top: 10px;
+    margin-top: 100px;
 }
 
 body {
@@ -93,7 +93,7 @@ section {
     left: 50%;
     transform: translateX(-50%);
     
-    border: 1px var(--grid-color) solid;
+    /* border: 1px var(--grid-color) solid; */
 }
 
 #grid div {
@@ -112,7 +112,7 @@ section {
 }
 
 #section-2 {
-    margin-top: 120px;
+    margin-top: 100px;
 }
 
 #section-2 > img{

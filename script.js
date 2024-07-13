@@ -3,22 +3,23 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
     if (findGrid) {
         for (let i = 0; i < 288; i++) {
-            findGrid.innerHTML += `<div class="gird-box"></div>`;
+            findGrid.innerHTML += `<div class="grid-box"></div>`;
         }
     } else {
         console.error('타겟 엘리먼트가 존재하지 않습니다.');
     }
+    anime({
+        targets: '#grid .grid-box',
+        scale: [
+            {value: .1, easing: 'easeOutSine', duration: 500},
+            {value: 1, easing: 'easeInOutQuad', duration: 1200}
+        ],
+        delay: anime.stagger(200, {grid: [24, 12], from: 'center'}),
+        loop: true, 
+        direction: 'alternate',
+    });
 });
 
-anime({
-    targets: '#grid .grid-box',
-    scale: [
-        {value: .1, easing: 'easeOutSine', duration: 500},
-        {value: 1, easing: 'easeInOutQuad', duration: 1200}
-    ],
-    delay: anime.stagger(200, {grid: [24, 12], from: 'center'}),
-    autoplay: true
-});
 
 const box = document.querySelector('#main-section > div');
 

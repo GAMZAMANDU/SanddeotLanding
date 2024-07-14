@@ -10,12 +10,11 @@
 
     animation: scroll 18s infinite linear;
 }
-
 .display-board {
     margin-top: 80px;
     display: flex;
-    border-top: 2px solid #FF4D4D;
-    border-bottom: 2px solid #FF4D4D;
+    border-top: 2px solid var(--main-red-color);
+    border-bottom: 2px solid var(--main-red-color);
 }
 
 .display-board span {
@@ -34,14 +33,14 @@
 
 
 .fill-box-red {
-    color: #FF4D4D;
+    color: var(--main-red-color);
 }
 
 .fill-border-red {
     color: var(--main-bg-color);
     text-shadow:
-        -1px -1px 0 #FF4D4D,  
-        1px -1px 0 #FF4D4D,
-        -1px  1px 0 #FF4D4D,
-       1px  1px 0 #FF4D4D; /* 텍스트 테두리 색상과 위치 */
+        -1px -1px 0 var(--main-red-color),  
+        1px -1px 0 var(--main-red-color),
+        -1px  1px 0 var(--main-red-color),
+       1px  1px 0 var(--main-red-color);
 }

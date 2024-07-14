@@ -24,7 +24,7 @@
     text-align: center;
 
     color: #fff;
-    background-color: #FF4D4D;
+    background-color: var(--main-red-color);
     
     font-size: 30px;
     font-family: 'Pretendard-Regular';

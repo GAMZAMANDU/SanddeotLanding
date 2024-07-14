@@ -19,12 +19,35 @@ section{
     width: 800px;
 }
 
-
 h3 {
-    color: #FF4D4D;
+    color: var(--main-red-color);
     font-size: 40px;
 
     font-family: 'Pretendard-Regular';
+}
 
+h4 {
+    color: var(--main-red-color);
+    
+    font-family: 'Pretendard-Regular';
+    font-weight: 400;
+
+    margin-left: 1px;
     margin-bottom: 10px;
+}
+
+
+#tost_btn {
+    display: block;
+    margin: 40px auto;
+    padding: 10px 20px;
+    background-color: royalblue;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+#tost_btn:hover {
+    box-shadow: 3px 4px 11px 0px #00000040;
 }

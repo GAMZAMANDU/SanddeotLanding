@@ -10,7 +10,7 @@ function InsertText(targetID,array){
 
     target.innerHTML = '';
     array.forEach(element => {
-        target.innerHTML += `<span class="save-word" onclick="saveWord(this)"
+        target.innerHTML += `<span class="save-word" onclick="tostOn(this,'save');"
         data-word=${element.replace(/[^a-zA-Z]/g, '').toLowerCase()}>${element}</span> `;
     });
 }
@@ -26,11 +26,15 @@ function saveWord(element){
     if (!saveWordList.includes(name)) {
         saveWordList.push(name);
         document.querySelector('.tags').innerHTML += `<li onclick="deleteWord(this)">${name}</li>`
+        return true;
+    }else{
+        return false;
     }
-    console.log(saveWordList);
 }
 
 function deleteWord(element){
+    tostOn(element,'delete');
+
     const target = element.textContent;
     saveWordList.splice(saveWordList.indexOf(target), 1);
     element.remove();

@@ -54,19 +54,28 @@ const posDictionary = {
 let tostMessage = document.getElementById('tost_message');
 
 function tostOn(cls,purpose) {
+    console.log(purpose)
     const btnClass = cls.className;
 
-    if (purpose = 'foomsa'){
+    if (purpose == 'foomsa'){
       const name = posDictionary[btnClass]['name'];
       const meaning = posDictionary[btnClass]['meaning'];
   
       tostMessage.innerHTML = `<b>${name}</b>: ${meaning}`;
-      tostMessage.classList.add('active');
+    }else if(purpose == 'save'){
+      if(saveWord(cls)){
+      tostMessage.innerHTML = `${cls.textContent.replace(/[^a-zA-Z]/g, '')}가 단어장에 추가되었어요`;
+    }else{
+      tostMessage.innerHTML = `이미 단어장에 포함되어 있어요`;
+
     }
-  
-      setTimeout(function() {
-        tostMessage.classList.remove('active');
-      }, 3000);
-    
+    }else if(purpose == 'delete'){
+      tostMessage.innerHTML = `${cls.textContent}를 단어장에서 삭제했어요`;
+    }
+
+    tostMessage.classList.add('active');
+    setTimeout(function() {
+      tostMessage.classList.remove('active');
+    }, 3000);
   }
   

@@ -51,3 +51,18 @@ h4 {
 #tost_btn:hover {
     box-shadow: 3px 4px 11px 0px #00000040;
 }
+
+
+.save-word:hover{
+    transition: 0.2s ease-out;
+}
+
+.save-word:hover {
+    position: relative;
+    bottom: 2px;
+    background-color: #ffdede;
+}
+
+#save-text{
+    line-height: 30px !important;
+}

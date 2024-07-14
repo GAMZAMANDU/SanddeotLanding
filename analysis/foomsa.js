@@ -6,8 +6,8 @@ function extractAlphabets(str) {
 function foomsa(sentence){
     const doc = nlp(sentence);
     
-    const posTags = doc.terms().out('tags');
     const terms = doc.terms().out('array');
+    const posTags = doc.terms().out('tags');
     
     let result = '';
     
@@ -20,8 +20,15 @@ function foomsa(sentence){
 }
 
 
-function update(index) {
+function update(index,propose) {
     var inputText = document.querySelectorAll("input")[index].value;
-    document.querySelectorAll(".box-title")[index].innerHTML = foomsa(inputText);
+
+    const target = document.querySelectorAll(".box-title")[index];
+    if(propose == 'foomsa'){
+    target.innerHTML = foomsa(inputText);
+    }else if(propose == 'save'){
+    InsertText(target.id,splitText(inputText));
+    }
+
 }
 

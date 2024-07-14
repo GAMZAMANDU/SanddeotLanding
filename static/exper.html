@@ -42,8 +42,22 @@
         <input
           id="box-in-msg"
           placeholder="영어를 입력하고 호버로 확인하세요"
-          oninput="update(0)"
+          oninput="update(0,'foomsa')"
         />
+      </div>
+    </section>
+    <section>
+        <h3>단어 저장기능</h3>
+        <h4>영어문장 해석 중 저장하고 싶은 단어를 선택할 수 있어요</h4>
+      <div class="prototype-box">
+        <h6 class="box-title" id="save-text">
+        </h6>
+        <input
+        id="box-in-msg"
+        placeholder="영어를 입력하고 호버로 확인하세요"
+        oninput="update(1,'save')"
+      />
+
       </div>
     </section>
   </main>
@@ -52,5 +66,9 @@
 
   <script src="tost/tost.js"></script>
   <script src="../analysis/foomsa.js"></script>
+  <script src="../analysis/save.js"></script>
 </body>
 </html>
+
+
+<!-- 단어 뜻  -->

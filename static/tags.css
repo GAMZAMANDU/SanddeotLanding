@@ -1,0 +1,13 @@
+.tags li{
+    list-style: none;
+    border-radius: 20px;
+    
+    padding: 2px 5px;
+    margin: 8px 5px 0px 0px;
+    
+    background-color: rgb(255, 184, 176);
+}
+
+.tags {
+    display: flex;
+}

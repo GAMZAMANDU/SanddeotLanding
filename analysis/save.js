@@ -25,6 +25,13 @@ function saveWord(element){
 
     if (!saveWordList.includes(name)) {
         saveWordList.push(name);
+        document.querySelector('.tags').innerHTML += `<li onclick="deleteWord(this)">${name}</li>`
     }
     console.log(saveWordList);
+}
+
+function deleteWord(element){
+    const target = element.textContent;
+    saveWordList.splice(saveWordList.indexOf(target), 1);
+    element.remove();
 }

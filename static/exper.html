@@ -1,74 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>산뜻 - 영어독해능력 향상을 위한 탁월한 선택</title>
-  <link rel="icon" href="/assets/icon.ico" />
-  <link rel="stylesheet" href="index.css" />
-  <link rel="stylesheet" href="prototype-box.css" />
-  <link rel="stylesheet" href="default.css" />
-  <link rel="stylesheet" href="exper.css" />
-  <link rel="stylesheet" href="foomsaColor.css">
-  <link rel="stylesheet" href="tost/tost.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>산뜻 - 영어독해능력 향상을 위한 탁월한 선택</title>
+    <link rel="icon" href="/assets/icon.ico" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="prototype-box.css" />
+    <link rel="stylesheet" href="default.css" />
+    <link rel="stylesheet" href="exper.css" />
+    <link rel="stylesheet" href="foomsaColor.css" />
+    <link rel="stylesheet" href="tost/tost.css" />
+    <link rel="stylesheet" href="tags.css" />
 
-  <script src="https://unpkg.com/compromise"></script>
-</head>
-<body>
-  <header>
-    <div>
-      <a href="index.html">
-        <img id="LOGO" src="/assets/LOGO.svg" alt="" />
-      </a>
-      <nav>
-        <a href="index.html">제품소개</a>
-        <a href="exper.html">체험하기</a>
-      </nav>
-    </div>
-  </header>
-  <main>
-    <section>
-      <img
-        src="../assets/메인 슬로건.svg"
-        alt="산뜻의 핵심기능 체험에 오신 것을 환영합니다"
-        id="main-title"
-      />
-    </section>
-    <section>
-        <h3>품사 탐색기능</h3>
-        <h4>영어문장을 입력하고 색깔별로 나뉜 단어를 눌러 품사를 확인해보세요</h4>
-      <div class="prototype-box">
-        <h6 class="box-title"></h6>
-        <input
-          id="box-in-msg"
-          placeholder="영어를 입력하고 호버로 확인하세요"
-          oninput="update(0,'foomsa')"
-        />
+    <script src="https://unpkg.com/compromise"></script>
+  </head>
+  <body>
+    <header>
+      <div>
+        <a href="index.html">
+          <img id="LOGO" src="/assets/LOGO.svg" alt="" />
+        </a>
+        <nav>
+          <a href="index.html">제품소개</a>
+          <a href="exper.html">체험하기</a>
+        </nav>
       </div>
-    </section>
-    <section>
+    </header>
+    <main>
+      <section>
+        <img
+          src="../assets/메인 슬로건.svg"
+          alt="산뜻의 핵심기능 체험에 오신 것을 환영합니다"
+          id="main-title"
+        />
+      </section>
+      <section>
+        <h3>품사 탐색기능</h3>
+        <h4>
+          영어문장을 입력하고 색깔별로 나뉜 단어를 눌러 품사를 확인해보세요
+        </h4>
+        <div class="prototype-box">
+          <h6 class="box-title"></h6>
+          <input
+            id="box-in-msg"
+            placeholder="영어를 입력하고 호버로 확인하세요"
+            oninput="update(0,'foomsa')"
+          />
+        </div>
+      </section>
+      <section>
         <h3>단어 저장기능</h3>
         <h4>영어문장 해석 중 저장하고 싶은 단어를 선택할 수 있어요</h4>
-      <div class="prototype-box">
-        <h6 class="box-title" id="save-text">
-        </h6>
-        <input
-        id="box-in-msg"
-        placeholder="영어를 입력하고 호버로 확인하세요"
-        oninput="update(1,'save')"
-      />
+        <div class="prototype-box">
+          <h6 class="box-title" id="save-text"></h6>
+          <input
+            id="box-in-msg"
+            placeholder="영어를 입력하고 단어를 클릭하여 저장하세요"
+            oninput="update(1,'save')"
+          />
+          <ul class="tags">
+          </ul>
+        </div>
+      </section>
+    </main>
 
-      </div>
-    </section>
-  </main>
+    <div id="tost_message">토스트 메시지 입니다!</div>
 
-  <div id="tost_message">토스트 메시지 입니다!</div>
-
-  <script src="tost/tost.js"></script>
-  <script src="../analysis/foomsa.js"></script>
-  <script src="../analysis/save.js"></script>
-</body>
+    <script src="tost/tost.js"></script>
+    <script src="../analysis/foomsa.js"></script>
+    <script src="../analysis/save.js"></script>
+  </body>
 </html>
-
 
 <!-- 단어 뜻  -->

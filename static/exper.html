@@ -55,14 +55,27 @@
         <div class="prototype-box">
           <h6 class="box-title" id="save-text"></h6>
           <input
-            id="box-in-msg"
             placeholder="영어를 입력하고 단어를 클릭하여 저장하세요"
             oninput="update(1,'save')"
           />
-          <ul class="tags">
-          </ul>
+          <ul class="tags"></ul>
         </div>
       </section>
+      <section>
+        <h3>AI 해석평가</h3>
+        <h4>OpenAI api를 활용한 해석평가가 제공됩니다</h4>
+        <div class="prototype-box">
+            <h6 class="box-title">The new software update will significantly improve system performance.</h6>
+            <input
+            id="ai-exp"
+              placeholder="예시"
+              readonly
+              value=""
+            />
+            <p class="AI-res">*훌륭한 해석입니다!</p>
+        </div>
+      </section>
+
     </main>
 
     <div id="tost_message">토스트 메시지 입니다!</div>
@@ -70,7 +83,6 @@
     <script src="tost/tost.js"></script>
     <script src="../analysis/foomsa.js"></script>
     <script src="../analysis/save.js"></script>
+    <script src="../analysis/aiEx.js"></script>
   </body>
 </html>
-
-<!-- 단어 뜻  -->

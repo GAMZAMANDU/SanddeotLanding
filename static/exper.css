@@ -66,3 +66,14 @@ h4 {
 #save-text{
     line-height: 30px !important;
 }
+
+.AI-res {
+    display: none;
+    font-family: 'Pretendard-Regular';
+    font-weight: 400;
+    font-size: 20px;
+
+    color: #421ad5;
+
+    margin: 5px;
+}

@@ -67,7 +67,7 @@ h4 {
     line-height: 30px !important;
 }
 
-.AI-res {
+.prototype-box p {
     display: none;
     font-family: 'Pretendard-Regular';
     font-weight: 400;
@@ -76,4 +76,8 @@ h4 {
     color: #421ad5;
 
     margin: 5px;
+}
+
+footer {
+    height: 50px;
 }

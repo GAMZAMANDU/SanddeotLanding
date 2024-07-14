@@ -75,7 +75,22 @@
             <p class="AI-res">*훌륭한 해석입니다!</p>
         </div>
       </section>
-
+      <section>
+        <h3>특수문법</h3>
+        <h4>input에 ?[내용] : 내용질문, *[내용] : 해당 내용을 강조해서 평가, ... : 모르는 단어생략을 적어 해석을 돕습니다</h4>
+        <div class="prototype-box">
+            <h6 class="box-title">The new software update will significantly improve system performance.</h6>
+            <input
+            id="ai-exp2"
+              placeholder="예시"
+              readonly
+              value=""
+            />
+            <p class="AI-res2">사용자의 해석은 대체로 정확하지만, "행동"이라는 단어 대신 "성능"이 더 적절합니다<br><br>
+                원문에서 "performance"는 시스템의 전반적인 성능을 의미합니다<br> "행동"보다는 "성능"이 더 자연스럽고 정확한 번역입니다
+                </p>
+        </div>
+      </section>
     </main>
 
     <div id="tost_message">토스트 메시지 입니다!</div>
@@ -84,5 +99,8 @@
     <script src="../analysis/foomsa.js"></script>
     <script src="../analysis/save.js"></script>
     <script src="../analysis/aiEx.js"></script>
+    <script src="../analysis/aiEx2.js"></script>
+
+    <footer></footer>
   </body>
 </html>

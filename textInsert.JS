@@ -6,7 +6,7 @@ let index = 0;
 
 setTimeout(() => {
     const intervalId = setInterval(() => {
-        target.textContent += text[index];
+        target.value += text[index];
         index++;
 
         if (index >= text.length) {

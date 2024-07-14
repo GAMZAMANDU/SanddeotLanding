@@ -1,5 +1,6 @@
 .prototype-box {
     max-height: 458px;
+    width: 100%;
     padding: 40px;
 
     border-radius: 44px;
@@ -21,8 +22,11 @@
     color: #252933;
 }
 
-.prototype-box p{
+.prototype-box input{
     height: 24.5px;
+    width: 95%;
+
+    border: 0px;
 
     font-family: 'TTTtangsbudaejjigaeB';
     font-size: 24px;
